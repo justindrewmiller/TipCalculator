@@ -33,11 +33,11 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAverage = new System.Windows.Forms.Button();
+            this.btnExcellent = new System.Windows.Forms.Button();
+            this.btnTax = new System.Windows.Forms.Button();
+            this.btnPoor = new System.Windows.Forms.Button();
+            this.txtInput = new System.Windows.Forms.TextBox();
             this.lblGreeting = new System.Windows.Forms.Label();
             this.lblDollar = new System.Windows.Forms.Label();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,48 +89,49 @@
             this.contactInfoToolStripMenuItem.Text = "Contact Info";
             this.contactInfoToolStripMenuItem.Click += new System.EventHandler(this.contactInfoToolStripMenuItem_Click);
             // 
-            // button1
+            // btnAverage
             // 
-            this.button1.Location = new System.Drawing.Point(15, 203);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAverage.Location = new System.Drawing.Point(15, 203);
+            this.btnAverage.Name = "btnAverage";
+            this.btnAverage.Size = new System.Drawing.Size(75, 23);
+            this.btnAverage.TabIndex = 2;
+            this.btnAverage.Text = "Average";
+            this.btnAverage.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnExcellent
             // 
-            this.button2.Location = new System.Drawing.Point(111, 203);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnExcellent.Location = new System.Drawing.Point(111, 203);
+            this.btnExcellent.Name = "btnExcellent";
+            this.btnExcellent.Size = new System.Drawing.Size(75, 23);
+            this.btnExcellent.TabIndex = 3;
+            this.btnExcellent.Text = "Excellent";
+            this.btnExcellent.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnTax
             // 
-            this.button3.Location = new System.Drawing.Point(12, 150);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnTax.Location = new System.Drawing.Point(12, 150);
+            this.btnTax.Name = "btnTax";
+            this.btnTax.Size = new System.Drawing.Size(75, 23);
+            this.btnTax.TabIndex = 4;
+            this.btnTax.Text = "Add Tax";
+            this.btnTax.UseVisualStyleBackColor = true;
+            this.btnTax.Click += new System.EventHandler(this.btnTax_Click);
             // 
-            // button4
+            // btnPoor
             // 
-            this.button4.Location = new System.Drawing.Point(111, 150);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 24);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPoor.Location = new System.Drawing.Point(111, 150);
+            this.btnPoor.Name = "btnPoor";
+            this.btnPoor.Size = new System.Drawing.Size(75, 24);
+            this.btnPoor.TabIndex = 5;
+            this.btnPoor.Text = "Poor";
+            this.btnPoor.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtInput.Location = new System.Drawing.Point(12, 83);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(174, 20);
+            this.txtInput.TabIndex = 7;
             // 
             // lblGreeting
             // 
@@ -193,15 +194,15 @@
             this.Controls.Add(this.lblPointer);
             this.Controls.Add(this.lblDollar);
             this.Controls.Add(this.lblGreeting);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtInput);
+            this.Controls.Add(this.btnPoor);
+            this.Controls.Add(this.btnTax);
+            this.Controls.Add(this.btnExcellent);
+            this.Controls.Add(this.btnAverage);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "TipCalculator";
-            this.Text = "Tip Calculator";
+            this.Text = "Tips";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -216,11 +217,11 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contactInfoToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAverage;
+        private System.Windows.Forms.Button btnExcellent;
+        private System.Windows.Forms.Button btnTax;
+        private System.Windows.Forms.Button btnPoor;
+        private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Label lblGreeting;
         private System.Windows.Forms.Label lblDollar;
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
