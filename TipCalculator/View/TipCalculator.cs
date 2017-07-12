@@ -66,5 +66,47 @@ namespace TipCalculator
                 return null;
             }
         }
+
+        private void btnPoor_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string input = txtInput.Text;
+                this.theBill = this.errorCheck(input);
+                lblResult.Text = this.theBill.getPoorService().ToString("#.00");
+            }
+            catch (Exception)
+            {
+                this.resetToolStripMenuItem_Click(sender, e);
+            }
+        }
+
+        private void btnAverage_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string input = txtInput.Text;
+                this.theBill = this.errorCheck(input);
+                lblResult.Text = this.theBill.getAverageService().ToString("#.00");
+            }
+            catch (Exception)
+            {
+                this.resetToolStripMenuItem_Click(sender, e);
+            }
+        }
+
+        private void btnExcellent_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string input = txtInput.Text;
+                this.theBill = this.errorCheck(input);
+                lblResult.Text = this.theBill.getExcellentService().ToString("#.00");
+            }
+            catch (Exception)
+            {
+                this.resetToolStripMenuItem_Click(sender, e);
+            }
+        }
     }
 }

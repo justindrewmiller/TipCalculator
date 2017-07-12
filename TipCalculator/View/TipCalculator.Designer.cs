@@ -97,6 +97,7 @@
             this.btnAverage.TabIndex = 2;
             this.btnAverage.Text = "Average";
             this.btnAverage.UseVisualStyleBackColor = true;
+            this.btnAverage.Click += new System.EventHandler(this.btnAverage_Click);
             // 
             // btnExcellent
             // 
@@ -106,6 +107,7 @@
             this.btnExcellent.TabIndex = 3;
             this.btnExcellent.Text = "Excellent";
             this.btnExcellent.UseVisualStyleBackColor = true;
+            this.btnExcellent.Click += new System.EventHandler(this.btnExcellent_Click);
             // 
             // btnTax
             // 
@@ -125,6 +127,7 @@
             this.btnPoor.TabIndex = 5;
             this.btnPoor.Text = "Poor";
             this.btnPoor.UseVisualStyleBackColor = true;
+            this.btnPoor.Click += new System.EventHandler(this.btnPoor_Click);
             // 
             // txtInput
             // 
