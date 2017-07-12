@@ -26,5 +26,12 @@ namespace TipCalculator
         {
             MessageBox.Show("Applicated created by Justin Miller. Sends issues with application at justindrewmiller@gmail.com", "About Creator");
         }
+
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TipCalculator resetForm = new TipCalculator();
+            resetForm.Show();
+            this.Dispose(false);
+        }
     }
 }
